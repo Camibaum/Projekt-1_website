@@ -1,0 +1,177 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+  background-color: #f5f7dcff;
+}
+
+/************** selected **************/
+
+footer {
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: rgb(39, 88, 249);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+h2 {
+  font-family: "montserrat-variable";
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 14px;
+  font-family: Arial, Helvetica;
+  line-height: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+dt {
+  text-decoration: underline;
+}
+
+dd {
+  font-size: 32px;
+  margin-bottom: 1.4rem;
+}
+
+img {
+  border: solid #0f0326ff;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/*********** Class sections ***********/
+
+.liste {
+  padding-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4rem;
+}
+
+.button {
+  font-family: "montserrat-variable";
+  font-weight: bold;
+  font-size: 14px;
+  padding: 1.2rem;
+  max-width: fit-content;
+  background-color: #e65f5cff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+}
+
+/*********** fonts ***********/
+
+@font-face {
+  font-family: "montserrat-variable";
+  src: url("fonts/montserrat-variablefont_wght-webfont.woff") format("woff"), url("fonts/montserrat-variablefont_wght-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*********** colors ***********/
+
+/*
+icterine ffff82ff
+beige f5f7dcff
+celadon b5d99cff
+dark-purple: 0f0326ff
+indian-red: e65f5cff
+*/
+
+/*************** Menu ****************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+header .logo a {
+  font-family: "montserrat-variable";
+  color: #333333;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: default;
+}
+header .logo a:hover {
+  color: blue;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  font-family: "montserrat-variable";
+  font-weight: bolder;
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  border: solid thin;
+}
+
+.menu a:hover {
+  color: blue;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
